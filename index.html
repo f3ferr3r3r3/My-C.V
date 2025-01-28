@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            background-color: black; /* الخلفية باللون الأسود */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white; /* النص بلون أبيض */
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #f0f0f0; /* لون فاتح لـ Hello */
+        }
+        h2 {
+            font-size: 24px;
+            color: #00ffcc; /* لون مختلف لـ Malak Mousa */
+        }
+        .circle {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+        }
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+        .yellow {
+            background-color: yellow;
+            color: black;
+        }
+        .resume, .projects, .contact {
+            display: none;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+    <script>
+        function showSection(section) {
+            document.querySelectorAll('.resume, .projects, .contact').forEach(function (div) {
+                div.style.display = 'none';
+            });
+            document.querySelector('.' + section).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>Hello</h1>
+    <img src="photo.jpeg" alt="My Picture" class="circle" style="border-radius: 50%; width: 150px; height: 150px;">
+    <h2>My Name: Malak Mousa</h2>
+    <p>Age: 17 years</p>
+    <p>Information about me goes here.</p>
+
+    <nav>
+        <a href="#" onclick="showSection('projects')">Projects</a>
+        <a href="#" onclick="showSection('resume')">Resume</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <div class="projects">
+        <h2>Previous Projects</h2>
+        <p>Some of the most important projects I have worked on include: Excel to PDF Converter: Developed a Python application that allows users to convert Excel files into PDF format seamlessly. This project enhanced my understanding of data manipulation and file handling in Python.</p>
+    </div>
+
+    <div class="resume">
+        <h2>My Resume</h2>
+        <p><strong>Name:</strong> Malak Mousa</p>
+        <p><strong>Age:</strong> 17 years</p>
+        <p><strong>School:</strong> Martyr Ahmed Hassan School</p>
+        <p><strong>Email:</strong> mhmdamyrh509@gmail.com</p>
+        <p><strong>Phone:</strong> 01275128405</p>
+        <p><strong>City:</strong> Mansoura</p>
+        <p><strong>Programming Languages:</strong> Python, HTML, CSS, C++</p>
+        <p><strong>About Me:</strong> 
+
+Profile
+Dedicated and skilled programmer with experience in various programming languages, including Python, C++, and HTML. Passionate about developing innovative software solutions and eager to leverage skills in programming and problem-solving.
+
+Skills
+
+Programming Languages: Python, C++, HTML
+
+Web Development
+
+Data Manipulation and Analysis
+
+Strong Problem-Solving Skills
+
+Excellent Communication Skills
+
+
+Projects
+
+1. Excel to PDF Converter
+Developed a tool that converts Excel files to PDF format, enabling users to easily share and print their spreadsheets.
+
+
+2. Personal Portfolio Website
+Created a responsive website to showcase my projects and skills, featuring sections for my resume, projects, and contact information.
+
+
+3. To-Do List Application
+Designed a web-based application that allows users to create, edit, and delete tasks, helping them stay organized and manage their time effectively.
+
+
+4. Simple Chat Application
+Developed a basic chat application using Python and Flask, enabling real-time communication between users.
+
+
+5. Weather App
+Built a web application that fetches weather data from an API and displays it in a user-friendly interface, allowing users to check the weather in their area.
+
+
+6. Quiz Application
+Created an interactive quiz application that tests users' knowledge on various topics, providing immediate feedback on their answers.
+
+
+
+Education
+Currently studying in the second year of high school, focusing on scientific mathematics, while continuously enhancing programming skills through self-directed learning and project development.
+.</p>
+        <p><strong>Skills:</strong> Strong problem-solving abilities, Excellent teamwork and collaboration skills, Effective communication skills, Ability to learn new technologies quickly.</p>
+        <p><strong>Hobbies:</strong> In my free time, I enjoy reading about new technological advancements, participating in coding challenges, and exploring various programming projects.</p>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: mhmdamyrh509@gmail.com</p>
+        <p>Phone: 01275128405</p>
+    </div>
+    
+    <div class="circle red" onclick="showSection('projects')">Project</div>
+    <div class="circle green" onclick="showSection('resume')">Resume</div>
+    <div class="circle yellow" onclick="showSection('contact')">Contact</div>
+</body>
+</html>
